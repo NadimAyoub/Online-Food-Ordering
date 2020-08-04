@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nadim's Food</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <b><a class="navbar-brand" href="index.html">Nadim's Food</a></b>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="order.html"> Order</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="active"><a href="reservation.html">Table Booking</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div id="content">
+            <div class="box">
+                <h3 id="reservation_t">Please select your seats.</h3>
+                <p><input id="namee" type="text" placeholder="Name" /></p>
+                <div id="val">
+                    <p id="val"><span id="result"></span></p>
+                </div>
+
+                <div id="reservation">
+                    <div class="divsection">
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                    </div>
+                    <div class="divsection">
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                    </div>
+                    <div class="divsection">
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                        <div class="divTable">
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <br>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                            <div onclick="changeBackgroundColor(this)" class="seat"></div>
+                        </div>
+                    </div>
+                    <div id="num_of_seats" style="display: none">
+                        <p>Your reservation has been made for <span id="num_seats">0</span> seats.
+                        </p></br>
+                    </div>
+                    <button class="btn btn-primary btn_purchase" type="button" onclick="submit_btn()">RESERVE</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2019 Nadim Ayoub.</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script>
+            document.getElementById("result").innerHTML = localStorage.getItem(
+                "textValue"
+            );
+            let divisions = document.getElementsByClassName("seat");
+
+
+            function submit_btn() {
+                var seatnum = document.getElementById('num_seats').innerHTML;
+
+                for (let i = 0; i < divisions.length; i++) {
+                    if (divisions[i].style.backgroundColor == "blue") {
+                        seatnum++;
+                    }
+                }
+
+                document.getElementById('num_seats').innerHTML = seatnum;
+                num_of_seats.style.display = "block";
+            }
+
+            function changeBackgroundColor(div) {
+                if (div.style.backgroundColor == "red") {
+                    div.style.backgroundColor = "blue";
+                } else {
+                    div.style.backgroundColor = "red";
+                }
+            }
+        </script>
+</body>
+
+</html>
